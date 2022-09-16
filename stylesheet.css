@@ -1,0 +1,212 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', serif;
+  font-size: 26pt;
+  background-color: #5c6c7c;
+  padding: 20px;
+  margin: 0;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #5cc0ac;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #5cc0ac;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 15pt;
+  color: #ffffff;
+  text-align: center;
+  padding: 15px 0 15px 0;
+  margin: 0 0 10px 0;
+}
+
+h1 span {
+  border: 8px solid #666666;
+  border-radius: 8px;
+  background-image: url("/Users/HP/Downloads/headerLogo.jpg");
+  padding: 12px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  color: #000000;
+}
+
+.img-circle {
+  border: 8px solid white;
+  border-radius: 50%;
+}
+
+.section {
+  background-color: #fff;
+  padding: 13px;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  
+}
+
+#header {
+  background-image: url("/Users/HP/Downloads/headerLogo2.jpg");
+  background-size: cover;
+}
+
+#header img {
+  display: block;
+  width: 400px;
+  height: 400px;
+  margin: auto;
+}
+
+#header p {
+  font-size: 50pt;
+  color: #5cc0ac;
+  padding-top: 8px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+#res {
+  text-align: center;
+  margin: 13px auto;
+}
+
+#res img{
+  display: block;
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+
+#res a {
+  margin: 13px 13px;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+
+progress {
+  width: 70%;
+  height: 20px;
+  color: #3fb6b2;
+  background: #efefef;
+}
+
+progress::-webkit-progress-bar {
+  background: #efefef;
+}
+
+progress::-webkit-progress-value {
+  background: #5cc0ac;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 250px;
+    background-color:  #5c6c7c;
+    border-radius: 20px;
+    padding: 1.3rem 2rem;
+    text-align: center;
+}
+
+#contacts img {
+  height: 150px;
+  width: 150px;
+  margin-left: 6px;
+  margin-right: 6px;
+  text-align: center;
+}
+
+#contacts {
+  text-align: center;
+}
+
+
+body.dark-mode {
+
+  color: white;
+}
+
+body.dark-mode .section {
+  background-color: #5c6c7c;
+}
+
+body.dark-mode h1 {
+ 
+  color: #5cc0ac;
+
+}
+body.dark-mode p {
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+body.dark-mode h1 span {
+  background-image: url("https://images.unsplash.com/photo-1519120944692-1a8d8cfc107f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80");
+  border: 8px solid #5cc0ac;
+}
