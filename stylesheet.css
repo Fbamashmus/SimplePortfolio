@@ -81,7 +81,7 @@ h1 {
 h1 span {
   border: 8px solid #666666;
   border-radius: 8px;
-  background-image: url("/Users/HP/Downloads/headerLogo.jpg");
+  background-image: url("headerLogo.jpg");
   padding: 12px;
 }
 
@@ -105,7 +105,7 @@ p {
 }
 
 #header {
-  background-image: url("/Users/HP/Downloads/headerLogo2.jpg");
+  background-image: url("headerLogo2.jpg");
   background-size: cover;
 }
 
